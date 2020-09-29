@@ -20,7 +20,7 @@ body {
     margin-left: 20px;
 }
 
-.login {
+.register {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@ body {
     min-height: calc(100vh - 200px);
 }
 
-.login__container {
+.register__container {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid white;
     border-radius: 40px;
@@ -42,56 +42,24 @@ body {
     flex-direction: column;
 }
 
-.login__container--form {
+.register__container--form {
     display: flex;
     flex-direction: column;
 }
 
-.login__container--form label {
+.register__container--login {
     font-size: 14px;
+    text-align: center;
 }
 
-.login__container--remember {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.login__container--remember a {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.login__container--remember a:hover {
-    text-decoration: underline;
-}
-
-.login__container--social-media>div {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.login__container--social-media>div>img {
-    width: 30px;
-    margin-right: 10px;
-}
-
-.login__container--register {
-    font-size: 14px;
-}
-
-.login__container--register a {
+.register__container--login a {
     color: white;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
 }
 
-.login__container--register a:hover {
+.register__container--login a:hover {
     text-decoration: underline;
 }
 
@@ -158,7 +126,7 @@ body {
 /*----------------------VISTA MOVIL------------------------*/
 
 @media only screen and (max-width: 600px){
-    .login__container{
+    .register__container{
         background-color: transparent;
         border: none;
         padding: 0;

@@ -2,20 +2,20 @@ body{
     margin: 0;
 }
 
-.carrousel{
+.carousel{
     width: 100%;
     overflow: scroll;
     padding: 30px;
     position: relative;
 }
 
-.carrousel__container{
+.carousel__container{
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
 }
 
-.carrousel-item{
+.carousel-item{
     background-color: tomato;
     width: 200px;
     height: 250px;
@@ -29,26 +29,26 @@ body{
     position: relative;
 }
 
-.carrousel-item:hover ~ .carrousel-item{
+.carousel-item:hover ~ .carousel-item{
     transform: translate3d(100px, 0, 0);
 }
 
-.carrousel__container:hover .carrousel-item{
+.carousel__container:hover .carousel-item{
      opacity: 0.3;
 }
 
-.carrousel__container:hover .carrousel-item:hover{
+.carousel__container:hover .carousel-item:hover{
     transform: scale(1.5);
     opacity: 1;
 }
 
-.carrousel-item__img{
+.carousel-item__img{
     width: 200px;
     height: 250px;
     object-fit: cover;
 }
 
-.carrousel-item__details{
+.carousel-item__details{
     background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
     font-size: 10px;
     opacity: 0;
