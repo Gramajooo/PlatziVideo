@@ -1,0 +1,20 @@
+/*-----------------CAROUSEL------------------*/
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+    padding: 30px;
+    position: relative;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+/*---------scroll---------*/
+
+::-webkit-scrollbar {
+    display: none;
+}
