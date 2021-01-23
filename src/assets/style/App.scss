@@ -1,3 +1,6 @@
+@import "./Vars.scss";
+@import "./Media.scss";
+
 * {
     /* margin: 0; */
     padding: 0;
@@ -6,25 +9,8 @@
 
 body {
     margin: 0px;
-    background-color: #0069ff;
+    background-color: $main-color;
     background-image: linear-gradient(0deg, #0069ff 0%, #93c340 50%);
     background-attachment: fixed;
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.input {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid white;
-    border-radius: 25px;
-    color: white;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 17px;
-    height: 50px;
-    outline: none;
-    padding: 0px 20px;
-    width: 70%;
-}
-
-::placeholder {
-    color: white;
+    font-family: $theme-font;
 }
