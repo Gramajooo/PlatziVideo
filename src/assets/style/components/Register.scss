@@ -1,0 +1,87 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.register__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.register__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register__container--login {
+    font-size: 14px;
+    text-align: center;
+}
+
+.register__container--login a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.register__container--login a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    font-family: $theme-font;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $theme-font;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}

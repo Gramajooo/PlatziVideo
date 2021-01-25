@@ -1,0 +1,83 @@
+/*-------------ERROR 404 TEXT------------*/
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.error__container {
+    color: white;
+    min-height: 450px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error__container--title {
+    margin: 70px 0px;
+    font-size: 70px;
+}
+
+.error__container--subtitle {
+    margin: 0;
+    top: 0;
+    font-size: 17px;
+}
+
+/*--------ANIMATION ERROR 404---------------*/
+
+.text {
+    margin-top: 56px;
+    font-size: 4.5em;
+}
+
+.animated {
+    animation-duration: 4.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hinge {
+    0% {
+        transform: rotate(0);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+
+    20%,
+    60% {
+        transform: rotate(80deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+
+    40% {
+        transform: rotate(60deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+
+    80% {
+        transform: rotate(60deg) translateY(0);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        transform: translateY(500px);
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.hinge {
+    animation-name: hinge;
+}
