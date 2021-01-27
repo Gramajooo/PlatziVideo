@@ -17,12 +17,33 @@ const reducer = (state, action) => {
         ...state,
         user: action.payload,
       };
-    case 'LOGOUT_REQUEST':
+
+    case 'REGISTER_REQUEST':
       return {
         ...state,
         user: action.payload,
       };
+    case 'GET_VIDEO_SOURCE':
+      return {
+        ...state,
+        playing:
+          state.trends.find((items) => items.id === Number(action.payload)) ||
+          state.originals.find(
+            (items) => items.id === Number(action.payload)
+          ) ||
+          [],
+      };
+    case 'GET_VIDEO_SEARCH':
+      if (action.payload === '') return { ...state, searchResult: [] };
 
+      const listas = [...state.trends, ...state.originals];
+
+      return {
+        ...state,
+        searchResult: listas.filter((item) =>
+          item.title.toLowerCase().includes(action.payload.toLowerCase())
+        ),
+      };
     default:
       return state;
   }

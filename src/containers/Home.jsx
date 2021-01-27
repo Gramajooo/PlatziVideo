@@ -1,15 +1,27 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import '../assets/style/App.scss';
+import Header from '../components/Header';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
 
-const Home = ({ mylist, trends, originals }) => {
+const Home = ({ mylist, trends, originals, searchResult }) => {
   return (
     <>
-      <Search />
+      <Header />
+      <Search isHome />
+      {Object.keys(searchResult).length > 0 && (
+        <Categories title="Resultados de la busqueda...">
+          <Carousel>
+            {searchResult.map((item) => (
+              <CarouselItem key={item.id} {...item} />
+            ))}
+          </Carousel>
+        </Categories>
+      )}
+
       {mylist.length > 0 && (
         <Categories title="Mi lista">
           <Carousel>
@@ -42,6 +54,7 @@ const mapStateToProps = (state) => {
     mylist: state.mylist,
     trends: state.trends,
     originals: state.originals,
+    searchResult: state.searchResult,
   };
 };
 
