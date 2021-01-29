@@ -1,8 +1,8 @@
 {
+  "homepage": "https://gramajooo.github.io/PlatziVideo/",
   "name": "PlatziVideo",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://gramajooo.github.io/PlatziVideo/",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/Gramajooo/PlatziVideo/issues"
   },
-  "homepage": "https://github.com/Gramajooo/PlatziVideo#readme",
   "dependencies": {
     "classnames": "^2.2.6",
     "md5": "^2.3.0",
@@ -57,5 +56,11 @@
     "webpack": "^5.16.0",
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
